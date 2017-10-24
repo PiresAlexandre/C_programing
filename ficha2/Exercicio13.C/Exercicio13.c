@@ -29,12 +29,12 @@ int main(int argc, char** argv) {
     scanf("%d", &temp_ideal);
     
     if (temp_ideal < temp_atual){
-        diferenca = (float)temp_atual - temp_ideal;   
+        diferenca = temp_atual - temp_ideal;   
         printf("Para reduzir a temperatura até a desejada necessitará de %.0fs\n", diferenca * 120);
     }
     
     if (temp_ideal > temp_atual){
-        diferenca = (float)temp_ideal - temp_atual;   
+        diferenca = temp_ideal - temp_atual;   
         printf("Para aumentar a temperatura até a desejada necessitará de %.0fs\n", diferenca * 180);
     }
     return (EXIT_SUCCESS);
