@@ -18,38 +18,27 @@
  * 
  */
 int main(int argc, char** argv) {
-    double saldo, tipo, valor;
-    
-    puts ("Introduza o seu saldo bancário!");
+    double saldo, montante, saldo_final;
+   
+    printf("Introduza saldo da sua conta: ");
     scanf("%lf", &saldo);
     
-    puts("Insira um montante positivo ");
-    scanf("%lf", &tipo);
+    printf("Introduza o montante a debitar ou creditar (- ou +): ");
+    scanf("%lf", &montante);
     
-    if (tipo > 0 ){
-        valor = saldo + tipo;
-        if(valor > saldo){
-          printf ("Operação realizável!\n");  
-        }else {
-          printf ("Operação impossível de realizar!\n");  
-        }
-        printf ("O saldo após o crédito é %.2lf€!", valor);
-    }
+    saldo_final = saldo + montante;
     
-    if (tipo < 0 ){
-        valor = saldo + tipo;
-        if(valor > saldo){
-          printf ("Operação realizável!\n");  
-        }else {
-          printf ("Operação impossível de realizar!\n");  
-        }
-        printf ("O saldo após o débito é %.2lf€!", valor);
-    }
-    
-    if (tipo == 0){
-        printf("O saldo assim mantém-se o mesmo! Cerca de %.2lf€", saldo);
-    }
+    if(saldo_final < 0){
+        puts("Operação Inválida. Tente novamente por favor.");
+        
+    }else if(saldo_final < saldo){
+        printf("Debito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", saldo_final);
+        
+    }else{
+        printf("Credito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", saldo_final);
+    } 
 
-    return (0);
+    return (EXIT_SUCCESS);
+    
 }
 
