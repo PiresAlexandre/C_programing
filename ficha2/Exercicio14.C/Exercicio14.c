@@ -18,7 +18,7 @@
  * 
  */
 int main(int argc, char** argv) {
-    double saldo, montante, saldo_final;
+    double saldo, montante, final;
    
     printf("Introduza saldo da sua conta: ");
     scanf("%lf", &saldo);
@@ -26,16 +26,16 @@ int main(int argc, char** argv) {
     printf("Introduza o montante a debitar ou creditar (- ou +): ");
     scanf("%lf", &montante);
     
-    saldo_final = saldo + montante;
+    final = saldo + montante;
     
-    if(saldo_final < 0){
-        puts("Operação Inválida. Tente novamente por favor.");
+    if(final < 0){
+        printf("Operação Inválida. Tente novamente por favor.\n");
         
-    }else if(saldo_final < saldo){
-        printf("Debito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", saldo_final);
+    }else if(final < saldo){
+        printf("Debito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", final);
         
     }else{
-        printf("Credito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", saldo_final);
+        printf("Credito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", final);
     } 
 
     return (EXIT_SUCCESS);
