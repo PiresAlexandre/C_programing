@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
         if(distancia_combustivel < 60){
             printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidade menor ou igual a 60Km/H tera de parar no 3º posto de combustivel aos 79KM\n");
+            printf("A velocidade menor ou igual a 60Km/H tera de parar no 3º posto de combustivel aos 79Km\n");
         }
         
     }else if(media_velocidade> 60 && media_velocidade <= 120){
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
         if(distancia_combustivel < 60){
             printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidades entre os 60Km/H e os 120Km/H tera de parar no 2º posto de combustivel aos 70KM\n");
+            printf("A velocidades entre os 60Km/H e os 120Km/H tera de parar no 2º posto de combustivel aos 70Km\n");
         }
         
     }else if(media_velocidade > 120){
@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
         if(distancia_combustivel < 60){
             printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidade superiore de 120Km/H tera de parar no 1º posto de combustivel aos 60KM\n");
+            printf("A velocidade superiore de 120Km/H tera de parar no 1º posto de combustivel aos 60Km\n");
         }
     }
 
