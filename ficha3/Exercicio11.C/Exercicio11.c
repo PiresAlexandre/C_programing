@@ -8,7 +8,7 @@
  * File:   main.c
  * Author: Alexandre
  *
- * Created on 26 de Outubro de 2017, 14:23
+ * Created on 26 de Outubro de 2017, 15:58
  */
 
 #include <stdio.h>
@@ -18,12 +18,20 @@
  * 
  */
 int main(int argc, char** argv) {
-    int num ;
+    int limite, numero, contador;
     
+    printf("Introduza um numero: ");
+    scanf("%d", &limite);
     
-    for (num = 2; num <= 300; num+=2){
-        printf("%d\n", num);
+    while ( limite > 0 ){
+        scanf("%d", &numero);
+        limite -= numero;
+        contador++;
+       
     }
+    printf("Foram introduzidos cerca de %d", contador);
+        
+    
 
     return (EXIT_SUCCESS);
 }

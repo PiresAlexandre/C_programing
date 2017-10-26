@@ -18,12 +18,11 @@
  * 
  */
 int main(int argc, char** argv) {
-      int num = 0;
+      int num;
     
     
-    while (num <= 100){
-        printf("\n%d", num);
-        num ++;
+    for (num = 1; num <= 100; num+=1){
+        printf("%d\n", num);
     }
 
     return (EXIT_SUCCESS);
