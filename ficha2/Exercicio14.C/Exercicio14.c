@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     final = saldo + montante;
     
     if(final < 0){
-        printf("Operação Inválida. Tente novamente por favor.\n");
+        puts("Operação Inválida. Tente novamente por favor.\n");
         
     }else if(final < saldo){
         printf("Debito realizado com sucesso. \nPossui atualmente cerca de %.2lf€ na conta.\n", final);

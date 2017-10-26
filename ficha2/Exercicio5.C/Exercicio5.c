@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
                 printf("O resultado da multiplicacao = %.2f\n", numero1 * numero2);
                 break;
             default :
-                printf("OPÇÃO INVÁLIDA!!!!!!");
+                puts("OPÇÃO INVÁLIDA!!!!!!");
     }
     
     

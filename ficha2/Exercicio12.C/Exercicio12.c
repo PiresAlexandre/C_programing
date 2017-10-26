@@ -28,31 +28,31 @@ int main(int argc, char** argv) {
     
     if (x == 0 && y == 0){
         printf("Coordenadas (%d,%d)\n", x, y);
-        printf("Encontra-se no ponto de origem 00.\n");
+        puts("Encontra-se no ponto de origem 00.\n");
     }
     if (x == 0 && y > 0) {
         printf("Coordenadas (%d,%d)\n", x, y);
-        printf("Encontra-se no eixo x.\n");
+        puts("Encontra-se no eixo x.\n");
     }
     if (x > 0 && y == 0) {
         printf("Coordenadas (%d,%d)\n", x, y);
-        printf("Encontra-se no eixo y.\n");
+        puts("Encontra-se no eixo y.\n");
     }
      if (x > 0 && y > 0){
         printf("Coordenadas: (%d,%d)\n", x ,y);
-        printf ("Pertence ao 1º Quandrante.\n "); 
+        puts("Pertence ao 1º Quandrante.\n "); 
          
     }else if (x < 0 && y > 0){
         printf("Coordenadas: (%d,%d\n)", x ,y);
-        printf ("Pertence ao 2º Quandrante.\n ");
+        puts("Pertence ao 2º Quandrante.\n ");
           
     }else if (x < 0 && y < 0){
         printf("Coordenadas: (%d,%d\n)", x ,y);
-        printf ("Pertence ao 3º Quandrante.\n ");
+        puts("Pertence ao 3º Quandrante.\n ");
           
     }else if (x > 0 && y < 0){
         printf("Coordenadas: (%d,%d)\n", x ,y);
-        printf ("Pertence ao 4º Quandrante.\n ");
+        puts("Pertence ao 4º Quandrante.\n ");
         
     }
 

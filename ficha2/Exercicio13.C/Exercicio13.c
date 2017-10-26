@@ -18,7 +18,6 @@
  * 
  */
 int main(int argc, char** argv) {
-    
     int temp_ideal;
     float temp_atual, diferenca;
     

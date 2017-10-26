@@ -17,39 +17,41 @@
 /*
  * 
  */
-#define km_distancia 130;
-
 int main(int argc, char** argv) {
     float conversao_hora, media_velocidade, distancia_combustivel, duracao;
                         
-        printf("Em quanto tempo pretendo realizar a viagem? (Em minutos): ");
-        scanf("%f", &duracao);
+    printf("Em quanto tempo pretendo realizar a viagem? (Em minutos): ");
+    scanf("%f", &duracao);
     
         conversao_hora = duracao / 60;                          //Conversão de minutos para hora.
     
-        media_velocidade = km_distancia / conversao_hora;                //Calculo da velocidade média atraves da distancia entra as duas cidades.
+        media_velocidade = 130 / conversao_hora;                //Calculo da velocidade média atraves da distancia entra as duas cidades.
     
-    if(media_velocidade <= 60){ distancia_combustivel = (4 * 100) / 5;
-    
-        if(distancia_combustivel < 60){
-            printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
+    if(media_velocidade <= 60){ 
+        distancia_combustivel = (4 * 100) / 5;
+        
+    if(distancia_combustivel < 60){
+            puts("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidade menor ou igual a 60Km/H tera de parar no 3º posto de combustivel aos 79Km\n");
+            puts("A velocidade menor ou igual a 60Km/H tera de parar no 3º posto de combustivel aos 79Km\n");
         }
         
-    }else if(media_velocidade> 60 && media_velocidade <= 120){ distancia_combustivel = (4 * 100) / 6;
-    
-        if(distancia_combustivel < 60){
-            printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
+    }else if(media_velocidade> 60 && media_velocidade <= 120){ 
+        distancia_combustivel = (4 * 100) / 6;
+        
+    if(distancia_combustivel < 60){
+            puts("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidades entre os 60Km/H e os 120Km/H tera de parar no 2º posto de combustivel aos 70Km\n");
+            puts("A velocidades entre os 60Km/H e os 120Km/H tera de parar no 2º posto de combustivel aos 70Km\n");
         }
         
-    }else if(media_velocidade > 120){ distancia_combustivel = (4 * 100) / 7;
-        if(distancia_combustivel < 60){
-            printf("Com apenas 4 litros não chegara a bomba de gasolina!\n");
+    }else if(media_velocidade > 120){ 
+        distancia_combustivel = (4 * 100) / 7;
+        
+    if(distancia_combustivel < 60){
+            puts("Com apenas 4 litros não chegara a bomba de gasolina!\n");
         }else{
-            printf("A velocidades superiores que 120Km/H tera de parar no 1º posto de combustivel aos 60Km\n");
+            puts("A velocidades superiores que 120Km/H tera de parar no 1º posto de combustivel aos 60Km\n");
         }
     }
 
