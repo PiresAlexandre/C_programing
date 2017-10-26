@@ -8,7 +8,7 @@
  * File:   main.c
  * Author: Alexandre
  *
- * Created on 26 de Outubro de 2017, 14:25
+ * Created on 26 de Outubro de 2017, 14:34
  */
 
 #include <stdio.h>
@@ -18,17 +18,25 @@
  * 
  */
 int main(int argc, char** argv) {
-    int valor_inicial, valor_final;
+    int valor, i;
     
-    puts("Introduza o valor inicial: ");
-    scanf("%d", &valor_inicial);
+    printf("Introduza o numero desejado: ");
+    scanf("%d", &valor);
     
-    puts("Introduza o valor final: ");
-    scanf("%d", &valor_final);
-    
-    for(++valor_inicial; valor_inicial < valor_final; valor_inicial += 1){
-        printf("%d\n", valor_inicial);
+    printf("5 numeros anteriores: ");
+    for (i=1; i<=5; ++i){
+        printf("%d ", valor -i);
     }
+    
+    printf("\n5 numeros superiores: ");
+    for (i=1; i<=5; ++i){
+        printf("%d ", valor +i);
+    }
+    
+    
+    
+    
+            
 
     return (EXIT_SUCCESS);
 }
