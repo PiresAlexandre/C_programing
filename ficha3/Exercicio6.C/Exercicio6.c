@@ -26,14 +26,10 @@ int main(int argc, char** argv) {
     printf("Introduza o valor do salto desejados: ");
     scanf("%d", &salto);
     
-    for (i=0; i<limite; i+= salto){
-        printf("Resultado do algoritmo: %d\n", i + salto);
+    for (i=0; i<= limite; i+= salto){
+        printf("Resultado do algoritmo: %d\n", i);
     }
     
-   
-    
-    
-
     return (EXIT_SUCCESS);
 }
 
