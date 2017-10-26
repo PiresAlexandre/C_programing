@@ -32,11 +32,11 @@ int main(int argc, char** argv) {
     }
     if (x == 0 && y > 0) {
         printf("Coordenadas (%d,%d)\n", x, y);
-        puts("Encontra-se no eixo x.\n");
+        puts("Encontra-se no eixo y.\n");
     }
     if (x > 0 && y == 0) {
         printf("Coordenadas (%d,%d)\n", x, y);
-        puts("Encontra-se no eixo y.\n");
+        puts("Encontra-se no eixo x.\n");
     }
      if (x > 0 && y > 0){
         printf("Coordenadas: (%d,%d)\n", x ,y);
