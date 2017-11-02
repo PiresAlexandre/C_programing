@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
     
     while (1){
         
-        puts("Voto desejado (1, 2, 3, 4, 0-branco, 9-nulo)");
+        puts("Voto desejado [1, 2, 3, 4, 0-branco, 9-nulo]");
         puts("Insira -1 para terminar");
         scanf("%d", &voto);
         
