@@ -8,7 +8,7 @@
  * File:   main.c
  * Author: Alexandre
  *
- * Created on 26 de Outubro de 2017, 15:58
+ * Created on 2 de Novembro de 2017, 9:52
  */
 
 #include <stdio.h>
@@ -18,23 +18,22 @@
  * 
  */
 int main(int argc, char** argv) {
-    int i, numero, div; 
+    int soma, total, numero;
 
-    printf("Insira um numero ");
-    scanf("%d", &numero);
-   
-    for (i = 1; i <= numero; i++) {
-        if (numero % i == 0){ 
-        div++;
+    do{
+        printf("Insira um numero (inclua -1 na sua media): ");
+        scanf("%d", &numero);
+        
+        if (numero == -1){
+            printf("A media dos valores é %.2lf\n", (float)soma / total);
+        }else{
+        soma += numero;
+        total++;
         }
     }
     
-     if (div == 2){
-        printf("%d é primo.", numero);
-    }else{
-        printf("%d não é primo.", numero);
-    }
-    
+    while (numero != -1);
+
     return (EXIT_SUCCESS);
 }
 
