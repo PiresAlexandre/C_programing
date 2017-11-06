@@ -13,23 +13,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "Calculadora.h"
 /*
  * 
  */
 
-long soma(int valor1, int valor2){
-    return valor1 + valor2;
-}
-long subtrair(int valor1, int valor2){
-    return valor1 - valor2;
-}
-double multiplicar(int valor1, int valor2){
-    return valor1 * valor2;
-}
-double dividir(int valor1, int valor2){
-    return (float)valor1 / valor2;
-}
+
 
 int main(int argc, char** argv) {
     int op, valor1 = 10, valor2 = 3;

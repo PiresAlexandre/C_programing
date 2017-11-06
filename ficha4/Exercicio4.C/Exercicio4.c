@@ -24,6 +24,7 @@ double Notas(int n){
     double soma;
     
     for(x=0; x<n; ++x){
+        
         printf("Introduza a nota %d: ", x+1);
         scanf("%lf", &notas);
         soma = soma + notas;
@@ -36,7 +37,7 @@ int main(int argc, char** argv) {
     int n;
     double media;
     
-    printf("Introduza um valor: ");
+    printf("Introduza notas desejadas: ");
     scanf("%d", &n);
     
     media=Notas(n);

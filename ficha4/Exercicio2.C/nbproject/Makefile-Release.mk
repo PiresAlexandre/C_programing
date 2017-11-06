@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Calculadora.o \
 	${OBJECTDIR}/Exercicio2.o
 
 
@@ -61,6 +62,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercicio2.c.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercicio2.c ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Calculadora.o: Calculadora.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Calculadora.o Calculadora.c
 
 ${OBJECTDIR}/Exercicio2.o: Exercicio2.c
 	${MKDIR} -p ${OBJECTDIR}
