@@ -18,7 +18,6 @@ long soma(int valor1, int valor2);
 long subtrair(int valor1, int valor2);
 double multiplicar(int valor1, int valor2);
 double dividir(int valor1, int valor2);
-void cleanentrybuffer();
 
 
 #endif /* CALCULADORA_H */

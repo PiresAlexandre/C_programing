@@ -18,8 +18,3 @@ double multiplicar(int valor1, int valor2){
 double dividir(int valor1, int valor2){
     return (float)valor1 / valor2;
 }
-
-void cleanentrybuffer() {
-    char ch;
-    while ((ch = getchar()) != '\n' && ch != EOF);
-}
