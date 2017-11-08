@@ -18,7 +18,7 @@
  * 
  */
 
-double Notas(int n){
+double notas(int n){
     int x;
     double notas; 
     double soma;
@@ -37,10 +37,10 @@ int main(int argc, char** argv) {
     int n;
     double media;
     
-    printf("Introduza notas desejadas: ");
+    printf("Introduza as notas: ");
     scanf("%d", &n);
     
-    media=Notas(n);
+    media=notas(n);
     
     printf("A sua média é de: %.2lf valores", media);
     
