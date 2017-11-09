@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Ex7.o \
 	${OBJECTDIR}/Exercicio7.o
 
 
@@ -61,6 +62,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercicio7.c.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercicio7.c ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Ex7.o: Ex7.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ex7.o Ex7.c
 
 ${OBJECTDIR}/Exercicio7.o: Exercicio7.c
 	${MKDIR} -p ${OBJECTDIR}
