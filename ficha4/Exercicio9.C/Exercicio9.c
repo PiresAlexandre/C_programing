@@ -13,14 +13,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#define n_inicio 0
 
 /*
  * 
  */
 
 int main(int argc, char** argv) {
-    int num;
-    const int n_inicio = 0;  
+    int num;  
     
     printf("Introduza o numero limite de impressao: ");
     scanf("%d", &num);

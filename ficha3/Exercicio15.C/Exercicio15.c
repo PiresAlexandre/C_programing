@@ -44,13 +44,13 @@ int main(int argc, char** argv) {
             puts("Idade negativa introduzida, o programa ira encerrar\n ");
             break;
         } else {
-            puts("Valor nao admitido dentro dos paramentros! ");
+            puts("Valor nao admitido dentro dos parametros! ");
             contador = contador - 1;
         }
 
     limparBufferEntrada();
 
-        puts("Introduza o seu sexo (M ou F): ");
+        puts("Introduza o seu sexo [M ou F]: ");
         scanf("%c", &sexo);
 
 
@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
 
     limparBufferEntrada();
 
-        puts("Introduza o seu estado civil (Solteiro: 1, Casado: 2, Divorciado: 3, Viuvo: 4): ");
+        puts("Introduza o seu estado civil [Solteiro: 1, Casado: 2, Divorciado: 3, Viuvo: 4]: ");
         scanf("%d", &estado_civil);
 
         if (estado_civil >= 1 && estado_civil <= 4) {           //insercao do dados de estado civil
