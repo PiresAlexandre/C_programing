@@ -15,6 +15,10 @@
 #include <stdlib.h>
 #define N_alunos 10
 
+/*
+ * 
+ */
+
 int main(int argc, char** argv) {
     int x, nota, contador, minimo = 0, maximo = 20;
     
