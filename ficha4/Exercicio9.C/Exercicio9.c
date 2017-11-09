@@ -17,6 +17,7 @@
 /*
  * 
  */
+
 int main(int argc, char** argv) {
     int num;
     const int n_inicio = 0;  
@@ -27,7 +28,7 @@ int main(int argc, char** argv) {
     const int n_final = num;
     
     for (n_inicio; n_final >= (num - n_final) ; ++num) {
-        printf("Nº: %d\n", num - n_final);
+        printf("Nº %d\n", num - n_final);
     }
     
     return (EXIT_SUCCESS);
