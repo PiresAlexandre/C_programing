@@ -8,26 +8,16 @@
  * File:   main.c
  * Author: Alexandre
  *
- * Created on 9 de Novembro de 2017, 12:14
+ * Created on 9 de Novembro de 2017, 14:05
  */
 
 #include <stdio.h>
 #include <stdlib.h>
-#define LIMITE 20
 
 /*
  * 
  */
-
 int main(int argc, char** argv) {
-    int x = 0;
-    int arr[LIMITE];
-    
-    for (x = 0; x < LIMITE; ++x) {arr[x] = x;}
-    
-    for (x = 0; x < LIMITE; ++x) { 
-        
-        printf("%d ", arr[x]);}
 
     return (EXIT_SUCCESS);
 }

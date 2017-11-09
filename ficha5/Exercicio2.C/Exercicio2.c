@@ -13,21 +13,21 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#define start 5 
-#define limite 21
+#define START 5 
+#define LIMITE 21
 
 /*
  * 
  */
 
 int main(int argc, char** argv) {
-    int x, arr[limite];
+    int x, arr[LIMITE];
     
-    for (x = 0; x < limite; ++x) {
-        arr[x] = x + start;
+    for (x = 0; x < LIMITE; ++x) {
+        arr[x] = x + START;
     }
     
-    for (x = 0; x < limite; ++x) {
+    for (x = 0; x < LIMITE; ++x) {
         printf ("%d ", arr[x]);       
     }
 
