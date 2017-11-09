@@ -25,8 +25,8 @@ void CleanEntryBuffer() {
 }
 
 int main(int argc, char** argv) {
-    int x, i, arr[LIMITE], count;
-    char symbol, symbol2;
+    int x, count;
+    char symbol, arr[LIMITE];
 
     for (x = 0; x <= LIMITE; ++x) {
         puts("Introduza um carater desejado: ");
@@ -34,15 +34,20 @@ int main(int argc, char** argv) {
     CleanEntryBuffer();
         arr[x] = symbol;
     }
-        
+    
         puts("Introduza segundo carater desejado: ");
-        scanf("%c", &symbol2);
+        scanf("%c", &symbol);
     CleanEntryBuffer();
 
-    for (i = 0; i <= LIMITE; ++i) {
-        if (symbol2 == arr[i]) {
+    for (x = 0; x <= LIMITE; ++x) {
+        if (symbol == arr[x]) {
             ++count;
         } 
+    }
+    
+    for (x = 0; x <= LIMITE; ++x) {
+        if (symbol == arr[x])
+            printf("posicoes: %d\n", x);
     }
     
     printf("O carater repete-se %d vezes\n", count);
