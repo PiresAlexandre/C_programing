@@ -15,23 +15,9 @@
 #include <stdlib.h>
 #define Asterisco '*'
 
-
-int lerinteiro(int minimo, int maximo) {
-    int ast;
-    
-    while (1) {
-        puts("Quantos asteriscos (*) quer colocar entre 1 e 50?");
-        scanf("%d", &ast);
-        
-        if (ast >= minimo && ast <= maximo) {
-            break;
-        } else {
-            printf("Valor nao permitido! Tente novamente!\n");
-            printf("\n");
-        }
-    }
-    return ast;
-}
+/*
+ * 
+ */
 
 void asteriscos(int num) {
     int i = 1;
@@ -42,10 +28,30 @@ void asteriscos(int num) {
 
 int main(int argc, char** argv) {
 
-    int ast, minimo = 1, maximo = 50;
+    int ast;
+    int minimo = 1;
+    int maximo = 1000;
 
-    ast = lerinteiro(minimo, maximo);
+    ast = lerInteiro(minimo, maximo);
     asteriscos(ast);
 
     return (0);
 }
+
+int lerInteiro(int minimo, int maximo) {
+    int ast;
+    
+    while (1) {
+        puts("Introduza a quantidade de asteriscos (até 1000): ");
+        scanf("%d", &ast);
+        
+        if (ast >= minimo && ast <= maximo) {
+            break;
+        } else {
+            printf("Valor nao permitido! Tente novamente!\n");
+            
+        }
+    }
+    return ast;
+}
+
