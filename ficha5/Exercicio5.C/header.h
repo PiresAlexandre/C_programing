@@ -16,11 +16,11 @@
 
 #define LIMITE 10
 
-    void imprimirVetor(double array[]);
-    void dobroVetor(double array[]);
-    void somaVetor(double array[]);
-    void mediaVetor(double array[]);
-    void menorVetor(double array[]);
+    void imprimirVetor(double arr[]);
+    void dobroVetor(double arr[]);
+    void somaVetor(double arr[]);
+    void mediaVetor(double arr[]);
+    void menorVetor(double arr[]);
 
 
 #endif 

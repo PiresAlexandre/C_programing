@@ -18,20 +18,20 @@
 #define LIMITE 10
 
 int main(int argc, char** argv) {
-    double array[LIMITE], num;
+    double arr[LIMITE], num;
     int x;
 
         for (x = 0; x < LIMITE; ++x) {
             puts("Introduza um valor: ");
-            scanf("%lf", &array[x]);      
+            scanf("%lf", &arr[x]);      
     }
     
-    imprimirVetor(array);
-    dobroVetor(array);
-    somaVetor(array);
-    mediaVetor(array);
-    maiorVetor(array);
-    menorVetor(array);
+    imprimirVetor(arr);
+    dobroVetor(arr);
+    somaVetor(arr);
+    mediaVetor(arr);
+    maiorVetor(arr);
+    menorVetor(arr);
 
     return (EXIT_SUCCESS);
 }
