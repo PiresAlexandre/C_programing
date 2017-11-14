@@ -21,9 +21,9 @@ int main(int argc, char** argv) {
     double array[LIMITE], num;
     int x;
 
-    for (x = 0; x < LIMITE; ++x) {
-        puts("Introduza um valor: ");
-        scanf("%lf", &array[x]);      
+        for (x = 0; x < LIMITE; ++x) {
+            puts("Introduza um valor: ");
+            scanf("%lf", &array[x]);      
     }
     
     imprimirVetor(array);
