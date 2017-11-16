@@ -49,7 +49,7 @@ void imprimirarrayA(int arrayA[]) {
     int x;
     
     for (x = 0; x < LIMITE; x++) {
-        printf("%d ", arrayA[x]);
+        printf(" %d |", arrayA[x]);
     }
 }
 
@@ -59,18 +59,23 @@ void imprimirarrayB(int arrayB[]) {
     int x;
     
     for (x = 0; x < LIMITE; x++) {
-        printf("%d ", arrayB[x]);
+        printf(" %d |", arrayB[x]);
     }
 }
 
 //ARRAY C
 
 void arrayC(int arrayC[], int arrayA[], int arrayB[]) {
-    int x;
+    int i, j;
+
+    for (i = 0; i < LIMITE; ++i) {
+        arrayC[i] = arrayA[i];
+        printf(" %2d |", arrayC[i]);
+    }
     
-    for (x = 0; x < LIMITE; x++) {
-        arrayC[x] = arrayA[x] + arrayB[x];
-        printf("%d ", arrayC[x]);
+    for (j = 0; j < LIMITE; ++j) {
+        arrayC[j] = arrayB[j];
+        printf(" %2d |", arrayC[j]);
     }
 }
 
@@ -95,7 +100,7 @@ void arrayD(int arrayA[], int arrayB[], int arrayD[]) {
     }
 
     for (i = 0; i < cont_array; ++i) {
-        printf("%d ", arrayD[i]);
+        printf(" %d |", arrayD[i]);
     }
 }
 
@@ -133,7 +138,7 @@ void arrayE(int arrayA[], int arrayB[], double arrayE[]) {
         if (arrayE[i] == 0.5) {
             continue;
         } else {
-            printf("%.0lf ", arrayE[i]);
+            printf(" %.0lf |", arrayE[i]);
         }
     }
 }
