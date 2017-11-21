@@ -19,26 +19,26 @@
 
 
 int main(int argc, char** argv) {
-    char frase_palavra1[LIMITE];
-    char frase_palavra2[LIMITE];
+    char palavra1[LIMITE];
+    char palavra2[LIMITE];
     int ordenar;
     
         puts("Introduza texto desejado: ");
-    lerString(frase_palavra1, LIMITE);
+    lerString(palavra1, LIMITE);
     
         puts("Introduza texto desejado: ");
-    lerString(frase_palavra2, LIMITE);
+    lerString(palavra2, LIMITE);
     
-        ordenar = strcmp(frase_palavra1, frase_palavra2);
+        ordenar = strcmp(palavra1, palavra2);
     
     
     if (ordenar < 0) {
-        printf("\n%s\n", frase_palavra1);
-        printf("%s\n", frase_palavra2);
+        printf("\n%s\n", palavra1);
+        printf("%s\n", palavra2);
     }
     else {
-        printf("\n%s\n", frase_palavra2);
-        printf("%s\n", frase_palavra1);
+        printf("\n%s\n", palavra2);
+        printf("%s\n", palavra1);
     }
     
     return (EXIT_SUCCESS);
