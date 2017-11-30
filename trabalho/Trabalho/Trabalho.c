@@ -13,8 +13,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "utils.h"
-#define MAX 2
+#define MAX_JOGADORES 2
 #define TAM_MATRIZ 10
 
 /*
@@ -39,7 +38,7 @@ void criarMatriz(char mat[][TAM_MATRIZ]){
         }
     }
     
-                      //PRENCHER A POSICAO (0,0) COM NADA   
+        mat[0][0]= ' ';                       //PRENCHER A POSICAO (0,0) COM NADA   
     
 }
 

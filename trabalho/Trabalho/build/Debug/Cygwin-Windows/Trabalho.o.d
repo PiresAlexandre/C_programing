@@ -1,3 +1,1 @@
-build/Debug/Cygwin-Windows/Trabalho.o: Trabalho.c utils.h
-
-utils.h:
+build/Debug/Cygwin-Windows/Trabalho.o: Trabalho.c
