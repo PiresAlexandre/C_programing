@@ -13,6 +13,7 @@
 
 #ifndef UTILS_H
 #define UTILS_H
+#include "utils.h"
 
     void clean_buffer();
 
