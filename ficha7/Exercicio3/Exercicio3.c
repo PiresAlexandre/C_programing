@@ -20,7 +20,7 @@
 
 int main(int argc, char** argv) {
     int matriz[LINHAS][COLUNAS];
-    int i = 0, j = 0;
+    int i, j;
     
     //prencher matriz 
         preencherMatriz(matriz); 
