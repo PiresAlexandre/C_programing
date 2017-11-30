@@ -21,35 +21,35 @@
  * 
  */
 
-void criarMatriz(char tabela[][TAM_MATRIZ]){
+void criarMatriz(char mat[][TAM_MATRIZ]){
     int i, j, aj = 65;
     
         for(j=1; j < TAM_MATRIZ; ++j){        //PRIMEIRA COLUNA COM NUMEROS (1-10)
-            tabela[j][0]= '0' + j;
+            mat[j][0]= '0' + j;
     }
     
         for(i=1; i < TAM_MATRIZ; ++i){        //PRIMEIRA LINHA COM LETRAS (A-J)
-            tabela[0][i]=aj;
+            mat[0][i]=aj;
             aj+=1;
     }
         
         for(i=1; i < TAM_MATRIZ; ++i){        //PRENCHER AS OUTRAS POSICOES COM UM *
             for(j=1; j< TAM_MATRIZ; ++j){
-                tabela[i][j]='*';
+                mat[i][j]='*';
         }
     }
     
-        tabela[0][0]= ' ';                    //PRENCHER A POSICAO (0,0) COM NADA   
+                      //PRENCHER A POSICAO (0,0) COM NADA   
     
 }
 
-void mostrarMatriz(char tabela[][TAM_MATRIZ]) {
+void mostrarMatriz(char mat[][TAM_MATRIZ]) {
     int i, j;
     
     // IMPRIMIR A MATRIZ
      for (i = 0; i < TAM_MATRIZ; ++i) {
             for (j = 0; j < TAM_MATRIZ; ++j) {
-                printf("%c|", tabela[i][j]);
+                printf("%c|", mat[i][j]);
              
         }
             puts("");  
