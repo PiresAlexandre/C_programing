@@ -83,11 +83,12 @@ void token_escolhido(char tokens[]){
 }
 
 int main(int argc, char** argv) {
+    char token [TOKEN];
     char matriz[TAM_MATRIZ][TAM_MATRIZ];
     
         criarMatriz(matriz);
         mostrarMatriz(matriz);  
-        token_escolhido(matriz);
+        token_escolhido(token);
     
     return (EXIT_SUCCESS);
 }
