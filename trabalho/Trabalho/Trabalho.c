@@ -15,10 +15,16 @@
 #include <stdlib.h>
 #define MAX_JOGADORES 2
 #define TAM_MATRIZ 10
+#define TOKEN 2
 
 /*
  * 
  */
+
+void clean_buffer() {
+    char ch;
+    while ((ch = getchar()) != '\n' && ch != EOF);
+}
 
 void criarMatriz(char mat[][TAM_MATRIZ]){
     int i, j, aj = 65;
@@ -56,11 +62,32 @@ void mostrarMatriz(char mat[][TAM_MATRIZ]) {
         
 }
 
+void token_escolhido(char tokens[]){
+    int i;
+    
+    //OS JOGADORES ESCOLHEM CADA UM OS SEUS TOKENS
+    for(i = 0; i < TOKEN; ++i){
+        printf("Jogador %d escolha o seu token: ", i+1);
+        scanf("%c", &tokens[i]);
+        
+        if(tokens[1]==tokens[0]){
+            i-= 1;
+            puts("TOKENS IGUAIS! Escolha diferente.");
+            clean_buffer();
+            continue;
+        }
+        clean_buffer();
+    }
+    puts("");
+    
+}
+
 int main(int argc, char** argv) {
     char matriz[TAM_MATRIZ][TAM_MATRIZ];
     
         criarMatriz(matriz);
-        mostrarMatriz(matriz);        
+        mostrarMatriz(matriz);  
+        token_escolhido(matriz);
     
     return (EXIT_SUCCESS);
 }
