@@ -272,8 +272,8 @@ int verificarjogadas(char matriz[][TAM_MATRIZ], char tokens, char coluna, int li
                     return 0;
     }
     
-    else if(coluna=='Z' || coluna=='z'){            //DESISTIR DANDO A VITORIA AO OPONENTE UTILIZANDO COLUNA Z LINHA 0
-        if(linha==0){            
+    else if(coluna == 'Z' || coluna == 'z'){            //DESISTIR DANDO A VITORIA AO OPONENTE UTILIZANDO COLUNA Z LINHA 0
+        if(linha == 0){            
             return 10; 
         }
                 puts("Posicao Ocupada. Tente outra.");
